@@ -2,6 +2,11 @@ body{
     background-image: url("/img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    /* SPEC FOR FIREFOX THE BEST BROWSER */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* ~~~~~~~~~~~~~~~~ */
 }
 
 .main, .central{
