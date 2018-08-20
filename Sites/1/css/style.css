@@ -1,0 +1,128 @@
+body{
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main, .central{
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+
+.main{
+    height: 55vh;
+    width: 60vw;
+}
+
+.central{
+    opacity: 0.98;
+    width: 60vw;
+    height: 45vh;
+    background-color: rgb(29, 23, 23);
+}
+
+.login, .sign_up{
+    position: absolute;
+    top: 18%;
+    width: 40%;
+    height: 50%;
+    padding-left: 10px;
+}
+
+.login, .sign_up p, h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    margin-bottom: 5;
+}
+
+.sign_up{
+    left: 4%;
+}
+
+.login{
+    right: 1%;
+}
+
+#button{
+    border: 1px solid white;
+    border-radius: 8%;
+    color: white;
+    font-size: 17px;
+    height: 25px;
+    width: 105px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(157, 157, 230)
+}
+
+form{
+    position: inherit;
+    background-color: white;
+    margin-left: 20px;
+    width: 45%;
+    height: 100%;
+}
+
+form fieldset{
+    margin-top: 30px;
+    border: none;
+}
+
+form legend{
+    font-size: 25px;
+    color: rgb(80, 150, 230);
+    margin-bottom: 25px;
+}
+
+form input[type=text]{
+    margin-bottom: 15px;
+    padding:8px;
+    border:none;
+    border-bottom:1px solid rgb(146, 145, 145);
+    width:100%
+}
+
+form input[type=text]:focus{
+    outline: none;
+}
+
+form button{
+    float: right;
+    margin-top: 10px;
+    background-color: rgb(127, 127, 206);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 18px;
+    border-radius: 4px;
+    outline: none;
+}
+
+form label{
+    color: #ccc;
+    font-size: 17px;
+}
+
+form label:after{
+    float: right;
+}
+
+form label#name:after{
+    content: url("/img/avatar.png");
+}
+
+form label#mail:after{
+    content: url("/img/mail.png");
+}
+
+form label#pass:after{
+    content: url("/img/lock.png");
+}
