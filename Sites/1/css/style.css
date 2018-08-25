@@ -1,5 +1,6 @@
 body{
-    background-image: url("/img/background.png");
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url("/img/background-b.png");
     background-repeat: no-repeat;
     background-size: cover;
     /* SPEC FOR FIREFOX THE BEST BROWSER */
@@ -11,7 +12,7 @@ body{
 
 .main, .central{
     transform: translate(-50%, -50%);
-    position: absolute; 
+    position: fixed; 
     top: 50%; 
     left: 50%;
 }
@@ -25,7 +26,7 @@ body{
     opacity: 0.98;
     width: 60vw;
     height: 45vh;
-    background-color: rgb(29, 23, 23);
+    background-color: #32393e;
 }
 
 .login, .sign_up{
@@ -37,7 +38,6 @@ body{
 }
 
 .login, .sign_up p, h2{
-    font-family: 'Open Sans Condensed', sans-serif;
     color: white;
     margin-bottom: 5;
 }
@@ -52,7 +52,7 @@ body{
 
 #button{
     border: 1px solid white;
-    border-radius: 8%;
+    border-radius: 3px;
     color: white;
     font-size: 17px;
     height: 25px;
@@ -65,6 +65,11 @@ body{
 
 a{
     text-decoration: none;
+    color: #ffffff
+}
+
+a:hover{
+    text-decoration: underline;
     color: rgb(157, 157, 230)
 }
 
@@ -82,52 +87,45 @@ form fieldset{
 }
 
 form legend{
-    font-size: 25px;
-    color: rgb(80, 150, 230);
+    font-size: 24px;
+    color: #3f9eff;
     margin-bottom: 25px;
 }
 
-form input[type=text]{
-    margin-bottom: 15px;
-    padding:8px;
+form input{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 7%;
     border:none;
-    border-bottom:1px solid rgb(146, 145, 145);
+    border-bottom:1px solid #ababab;
     width:100%
 }
 
-form input[type=text]:focus{
+form i{
+    position: absolute;
+    z-index: 1;
+    left: 90%;
+    font-size: 12px;
+    color: #d4d4d4;
+}
+
+form input::placeholder{
+    color: #dcdcd8;
+    font-size: 15px;
+}
+
+form input:focus{
     outline: none;
 }
 
 form button{
     float: right;
-    margin-top: 10px;
-    background-color: rgb(127, 127, 206);
+    margin-top: 20px;
+    background-color: #3f9eff;
     color: white;
     border: none;
     font-size: 15px;
-    padding: 5px 18px;
+    padding: 7px 29px;
     border-radius: 4px;
     outline: none;
-}
-
-form label{
-    color: #ccc;
-    font-size: 17px;
-}
-
-form label:after{
-    float: right;
-}
-
-form label#name:after{
-    content: url("/img/avatar.png");
-}
-
-form label#mail:after{
-    content: url("/img/mail.png");
-}
-
-form label#pass:after{
-    content: url("/img/lock.png");
 }
