@@ -1,0 +1,18 @@
+button{
+    height: 30px;
+    width: 120px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 2px
+}
+
+button:hover{
+    animation: colch 2s linear  
+}
+
+@keyframes colch{
+    to{
+        background-color: red;
+        color: white
+    }
+}
