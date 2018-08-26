@@ -20,6 +20,32 @@ button:hover{
     animation: sqcolch 2s linear 1s infinite
 }
 
+.prog-bar{
+    position: relative;
+    margin-top: 30px;
+    height: 30px;
+    width: 20%;
+    border: 1px solid gray;
+    box-shadow: 0 0 1px rgb(0, 0, .4)
+}
+
+.prog-status1, .prog-status2{
+    position: absolute;
+    z-index: -1;
+    height: 30px
+}
+
+.prog-status1{
+    width: 7%;
+    background-color: lightgreen;
+    animation: progress1 1s ease-in-out 1s infinite
+}
+
+.prog-status2{
+    background-color: lightgreen;
+    animation: progress2 4s linear 1s infinite
+}
+
 @keyframes colch{
     to{
         background-color: red;
@@ -35,5 +61,23 @@ button:hover{
     to{
         background-color: blue;
         transform: rotate(360deg)
+    }
+}
+
+@keyframes progress1{
+    from{
+        left: 0%
+    }
+    to{
+        left: 93%
+    }
+}
+
+@keyframes progress2{
+    from{
+        width: 0%
+    }
+    to{
+        width: 100%
     }
 }
