@@ -10,9 +10,27 @@ button:hover{
     animation: colch 2s linear  
 }
 
+.square{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    animation: sqcolch 2s linear 1s infinite
+}
+
 @keyframes colch{
     to{
         background-color: red;
         color: white
+    }
+}
+
+@keyframes sqcolch{
+    from{
+        background-color: yellow;
+        transform: rotate(0deg)
+    }
+    to{
+        background-color: blue;
+        transform: rotate(360deg)
     }
 }
