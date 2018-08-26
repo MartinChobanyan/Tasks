@@ -32,17 +32,16 @@ button:hover{
 .prog-status1, .prog-status2{
     position: absolute;
     z-index: -1;
-    height: 30px
+    height: 30px;
+    background-color: lightgreen
 }
 
 .prog-status1{
     width: 7%;
-    background-color: lightgreen;
     animation: progress1 1s ease-in-out 1s infinite
 }
 
 .prog-status2{
-    background-color: lightgreen;
     animation: progress2 4s linear 1s infinite
 }
 
