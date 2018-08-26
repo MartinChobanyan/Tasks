@@ -4,6 +4,7 @@ button{
     background-color: lightblue;
     border: none;
     box-shadow: 1px 1px 1px rgb(0, 0, .1);
+    outline: none;
     border-radius: 2px
 }
 
