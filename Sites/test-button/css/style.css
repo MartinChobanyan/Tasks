@@ -3,6 +3,7 @@ button{
     width: 120px;
     background-color: lightblue;
     border: none;
+    box-shadow: 1px 1px 1px rgb(0, 0, .1);
     border-radius: 2px
 }
 
@@ -14,6 +15,7 @@ button:hover{
     width: 60px;
     height: 60px;
     margin: 20px;
+    box-shadow: 0 0 1px rgb(0, 0, .4);
     animation: sqcolch 2s linear 1s infinite
 }
 
