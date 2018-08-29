@@ -14,13 +14,13 @@ body{
     transform: translate(-50%, -50%);
     position: fixed; 
     top: 50%; 
-    left: 50%;
+    left: 50%
 }
 
 .main{
     position: relative;
     height: 55vh;
-    width: 60vw;
+    width: 60vw
 }
 
 .central{
@@ -28,7 +28,7 @@ body{
     opacity: 0.98;
     width: 60vw;
     height: 45vh;
-    background-color: #32393e;
+    background-color: #32393e
 }
 
 .login, .sign_up{
@@ -36,20 +36,20 @@ body{
     top: 18%;
     width: 40%;
     height: 50%;
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 .login, .sign_up p, h2{
     color: white;
-    margin-bottom: 5;
+    margin-bottom: 5
 }
 
 .sign_up{
-    left: 4%;
+    left: 4%
 }
 
 .login{
-    right: 1%;
+    right: 1%
 }
 
 #button{
@@ -62,7 +62,7 @@ body{
     margin-top: 20px;
     padding-left: 40px;
     padding-top: 6px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 a{
@@ -81,18 +81,18 @@ form{
     background-color: white;
     width: 45%;
     height: 100%;
-    animation: move 1s cubic-bezier(.24,-0.33,.82,1.44) 2s 1 normal forwards
+    animation: move 1s cubic-bezier(.24,-0.33,.24,1.33) 2s 1 normal forwards
 }
 
 form fieldset{
     margin-top: 30px;
-    border: none;
+    border: none
 }
 
 form legend{
     font-size: 24px;
     color: #3f9eff;
-    margin-bottom: 25px;
+    margin-bottom: 25px
 }
 
 form input{
@@ -109,16 +109,16 @@ form i{
     z-index: 1;
     left: 90%;
     font-size: 12px;
-    color: #d4d4d4;
+    color: #d4d4d4
 }
 
 form input::placeholder{
     color: #dcdcd8;
-    font-size: 15px;
+    font-size: 15px
 }
 
 form input:focus{
-    outline: none;
+    outline: none
 }
 
 form button{
@@ -131,7 +131,7 @@ form button{
     padding: 7px 29px;
     border-radius: 4px;
     outline: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
 @keyframes move{
@@ -139,6 +139,6 @@ form button{
         left: 4%
     }
     to{
-        left: 50%;
+        left: 51%
     }
 }
