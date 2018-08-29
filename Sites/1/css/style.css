@@ -18,11 +18,13 @@ body{
 }
 
 .main{
+    position: relative;
     height: 55vh;
     width: 60vw;
 }
 
 .central{
+    position: fixed;
     opacity: 0.98;
     width: 60vw;
     height: 45vh;
@@ -75,10 +77,11 @@ a:hover{
 
 form{
     position: absolute;
+    left: 4%;
     background-color: white;
-    margin-left: 20px;
     width: 45%;
     height: 100%;
+    animation: move 1s cubic-bezier(.24,-0.33,.82,1.44) 2s 1 normal forwards
 }
 
 form fieldset{
@@ -128,4 +131,14 @@ form button{
     padding: 7px 29px;
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
+}
+
+@keyframes move{
+    from{
+        left: 4%
+    }
+    to{
+        left: 50%;
+    }
 }
